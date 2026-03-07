@@ -1,0 +1,544 @@
+*{
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedorpagina{
+    margin: 0;
+    padding: 0;
+    width: 380px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.contenedorsobres{
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.sobreuno{
+    position: absolute;
+    top: -20px;
+    z-index: 90;
+}
+
+.sobredos{
+    position: absolute;
+    z-index: 80;
+    bottom: 5px;
+}
+
+.boton{
+    position: absolute;
+    z-index: 95;
+    bottom: 120px;
+    left: 120px;
+    right: 120px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 5px;
+    border-radius: 50px
+}
+
+.textoboton{
+    font-size: 1.5em;
+    font-family: "Cardo", serif;
+    font-weight: 400;
+}
+
+.textosobre{
+    position: absolute;
+    z-index: 110;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.nombres{
+    font-family: "Cardo", serif;
+    font-weight: 200;
+    text-align: center;
+    line-height: 50px;
+    font-size: 3.2em;
+    color: white;
+} 
+
+.carousel-container {
+    opacity: 0;
+    width: 100%;
+    overflow: hidden;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.carousel-track {
+    display: flex;
+    width: calc(300px * 26);
+    animation: scrollCarousel 80s linear infinite;
+}
+
+
+.carousel-track img {
+    width: 300px;
+    height: 500px;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes scrollCarousel {
+    0% {
+    transform: translateX(0);
+        }
+    100% {
+   transform: translateX(calc(-300px * 13)); 
+        }
+}
+
+.texto1{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textofoto{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.padrinos{
+    opacity: 0;
+    width: 98%;
+}
+
+.fecha{
+    opacity: 0;
+    display: none;
+    width: 380px;
+    height: 800px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.imgxv{
+    width: 50%;
+}
+
+.dia{
+    max-width: 300px;
+}
+
+
+#countdown-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 15px;
+}
+
+.time-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+.time-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #006943;
+    line-height: 1;
+}
+
+.time-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #006943;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+#expired-message {
+    display: none;
+    font-size: 2rem;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.calendario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    max-width: 290px;
+}
+
+.diatexto{
+    color: #006943;
+    font-size: 2em;
+}
+
+.mes{
+    color: white;
+    font-size: 1.5em;
+}
+
+.imgcal{
+    padding-top: 25px;
+    width: 250px;
+}
+
+.musica{
+    opacity: 0;
+    display: none;
+    background-color: #0d381e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagenmusica{
+    width: 320px;
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fiesta{
+    position: relative;
+}
+
+.btn-misa{
+    position: absolute;
+    top: 220px;
+    left: 70px;
+
+    width: 180px;
+    height: 45px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.enlace-misa{
+    text-decoration: none;
+    color: #0d381e;
+    font-size: 1.3em;
+}
+
+.btn-fiesta{
+    position: absolute;
+    bottom: 120px;
+    left: 70px;
+
+    width: 180px;
+    height: 45px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.enlace-fiesta{
+    text-decoration: none;
+    color: #0d381e;
+    font-size: 1.3em;
+}
+
+
+.cajatextomusica{
+    width: 280px;
+    height: auto;
+}
+
+.textomusica{
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.titleplayer{
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+ }
+
+ .player-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.custom-player {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 100%;
+    width: 250px;
+    gap: 15px;
+}
+
+.play-pause {
+    background: #c1b6a3;
+    border: none;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+/* Barra de progreso minimalista */
+.progress-container {
+    flex-grow: 1;
+    height: 6px;
+    background: #f1f2f6;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    width: 0%;
+    height: 100%;
+    background: #c1b6a3;
+    transition: width 0.1s linear;
+}
+
+/* Volumen */
+.volume-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#volSlider {
+    width: 60px;
+    accent-color: #c1b6a3;
+    cursor: pointer;
+}
+
+.vol-icon {
+    font-size: 0.9rem;
+}
+
+.vestir{
+    opacity: 0;
+    
+}
+
+
+.infosection{
+    opacity: 0;
+   
+    background-color: #efe7da;
+}
+
+.info-container{
+    width: 80%;
+    padding: 20px 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.copa{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.imgrecep{
+    width: 210px;
+}
+
+.btn-place{
+    width: 160px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);    
+}
+
+.btn-place:hover{
+    background-color: #2f3542;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.enlace{
+    text-decoration: none;
+    color: #2f3542;
+    font-size: 1.2em;
+    font-family: "Cardo", serif;
+}
+
+.enlace:hover{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-family: "Cardo", serif;
+    transition: 0.4s ease-in-out;
+}
+
+.actividades{
+    width: 280px;
+}
+
+.asistir{
+    opacity: 0;
+    
+}
+
+.asistir-contain{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-asistir{
+    margin-top: 5px;
+    padding: 10px 30px;
+    background-color: #0d381e;
+    border: none;
+    border-radius: 20px;    
+}
+
+.enlace-asistir{
+    color: white;
+    font-size: 1.3em;
+    font-family: "Cardo", serif;
+    text-decoration: none;
+}
+
+.sobres{
+    opacity: 0;
+    
+}
+
+.gracias{
+    opacity: 0;
+    
+}
+
+.gracias-contain{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto-gracias{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.titulo-gracias{
+    text-align: center;
+    font-family: "Imperial Script", cursive;
+    font-weight: 200;
+    font-size: 3em;
+}
+
+.imagen-gracias{
+    width: 280px;
+}
+
+/*animaciones*/
+
+.animacionactivada .sobreuno{
+    transform: translateY(-100%);
+    transition: 1.2s ease-in-out;
+    opacity: 0;
+}
+
+.animacionactivada .sobredos{
+    transform: translateY(100%);
+    transition: 1.2s ease-in-out;
+    opacity: 0;
+}
+
+.animacionactivada .nombres{
+    transform: translateX(-100%);
+    transition: 1.2s ease-in-out;
+    opacity: 0;
+}
+
+.animacionactivada .boton{
+    
+    transition: 1.2s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.animacionactivada .textoboton{
+    
+    transition: 1.2s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.animacionactivada .carousel-container{
+    opacity: 100;
+    transition: 2s ease-in-out;
+}
+
+.animacionactivada .padrinos{
+    opacity: 100;
+    transition: 2s ease-in-out;
+}
+
+.animacionactivada .fecha{
+    opacity: 100;
+    transition: 2s ease-in-out;
+}
+
+.animacionactivada .musica{
+    opacity: 100;
+    transition: 2s ease-in-out;
+}
+
+.animacionactivada .vestir{
+    opacity: 100;
+    transition: 2s ease-in-out;
+}
+
+.animacionactivada .infosection{
+    opacity: 100;
+    transition: 2s ease-in-out;
+}
+
+.animacionactivada .asistir{
+    opacity: 100;
+    transition: 2s ease-in-out;
+}
+
+.animacionactivada .sobres{
+    opacity: 100;
+    transition: 2s ease-in-out;
+}
+
+.animacionactivada .gracias{
+    opacity: 100;
+    transition: 2s ease-in-out;
+}

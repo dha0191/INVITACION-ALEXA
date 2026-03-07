@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animacion</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Imperial+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<section class="contenedorpagina">
+    <div class="contenedorsobres">
+        <div class="textosobre">
+            <h2 class="nombres">
+            MIS XV <br> <br> ALEXA
+            </h2>
+        </div>
+
+        <img class="sobreuno" src="img/openup.png" alt="">
+        <img class="sobredos" src="img/opendown.png" alt="">
+
+        <button class="boton" id="boton">
+            <p class="textoboton"> Abrir invitacion</p>
+        </button>
+
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <img src="img/alexa (1).png" alt="imagen 1">
+                <img src="img/alexa (2).png" alt="imagen 2">
+                <img src="img/alexa (3).png" alt="imagen 3">
+                <img src="img/alexa (4).png" alt="imagen 4">
+                <img src="img/alexa (5).png" alt="imagen 5">
+                <img src="img/alexa (6).png" alt="imagen 6">
+                <img src="img/alexa (7).png" alt="imagen 7">
+                <img src="img/alexa (8).png" alt="imagen 8">
+                <img src="img/alexa (9).png" alt="imagen 9">
+                <img src="img/alexa (10).png" alt="imagen 10">
+                <img src="img/alexa (11).png" alt="imagen 10">
+                <img src="img/alexa (12).png" alt="imagen 10">
+                <img src="img/alexa (13).png" alt="imagen 10">
+                <img src="img/alexa (1).png" alt="imagen 1">
+                <img src="img/alexa (2).png" alt="imagen 2">
+                <img src="img/alexa (3).png" alt="imagen 3">
+                <img src="img/alexa (4).png" alt="imagen 4">
+                <img src="img/alexa (5).png" alt="imagen 5">
+                <img src="img/alexa (6).png" alt="imagen 6">
+                <img src="img/alexa (7).png" alt="imagen 7">
+                <img src="img/alexa (8).png" alt="imagen 8">
+                <img src="img/alexa (9).png" alt="imagen 9">
+                <img src="img/alexa (10).png" alt="imagen 10">
+                <img src="img/alexa (11).png" alt="imagen 10">
+                <img src="img/alexa (12).png" alt="imagen 10">
+                <img src="img/alexa (13).png" alt="imagen 10">
+            </div>
+        </div>
+
+        <div class="texto1">
+            <p class="textofoto">Agradecimiento especial a mis padrinos de bautizo que han estado en cada etapa de mi vida apoyándome y celebrando conmigo cada logro.</p>
+        </div>
+    </div>
+    
+    <section class="padrinos">
+        <img src="img/padrinosalexa.svg" alt="">
+    </section>
+
+    <section class="fecha">
+        
+        <img class="dia" src="img/fechaxv.svg" alt="fecha">
+
+        <img class="imgxv" src="img/xvim.png" alt="">
+
+        <div id="countdown-container">
+            <div class="time-block">
+                <span class="time-number" id="days">00</span>
+                <span class="time-label">Días</span>
+            </div>
+            <div class="time-block">
+                <span class="time-number" id="hours">00</span>
+                <span class="time-label">Horas</span>
+            </div>
+            <div class="time-block">
+                <span class="time-number" id="minutes">00</span>
+                <span class="time-label">Min</span>
+            </div>
+            <div class="time-block">
+                <span class="time-number" id="seconds">00</span>
+                <span class="time-label">Seg</span>
+            </div>
+        </div>
+
+        <div id="expired-message">¡Tiempo Cumplido!</div>
+
+        <div class="calendario">
+            <h3 class="diatexto">EL GRAN DIA</h3>
+            <img class="imgcal" src="img/calenmayo.svg" alt="">
+        </div>
+    </section>
+
+    <section class="musica">
+        <div class="fiesta">
+            <img class="imagenmusica" src="img/fiesta.svg" alt="">
+
+            <div class="botones">
+                <button class="btn-misa">
+                    <a class="enlace-misa" href="https://maps.app.goo.gl/c9MZY2nxGpujrA4j8" target="_blank">Ver Ubicación</a>
+                </button>
+
+                <button class="btn-fiesta">
+                    <a class="enlace-fiesta" href="https://maps.app.goo.gl/cvaxKfphqawmsm12A" target="_blank">Ver Ubicación</a>
+                </button>
+            </div>
+        </div>
+        <div class="player-wrapper">
+            <p class="titleplayer">Mi Canción</p>
+            <audio id="eventoAudio" src="img/musica/musicaalexaxv.mp3" loop autoplay></audio>
+
+            <div class="custom-player">
+                <button id="playBtn" class="play-pause">▶</button>
+                
+                <div class="progress-container">
+                   <div id="progress-bar" class="progress-fill"></div> 
+                </div>
+
+                <div class="volume-container">
+                    <span class="vol-icon">🔈</span>
+                    <input type="range" id="volSlider" min="0" max="1" step="0.1" value="0.8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="asistir">
+        <div class="asistir-contain">
+            <img src="img/asistirxv.svg" alt="">
+            <button class="btn-asistir">
+                <a class="enlace-asistir" href="https://wa.me/5213310066463" target="_blank">
+                    Confirmar Asistencia
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <section class="sobres">
+        <img class="sobres-imagen" src="img/frasexv.svg" alt="">
+    </section>
+
+    <section class="gracias">
+        <div class="gracias-contain">
+            <p class="texto-gracias">Esperamos contar con su presencia</p>
+            <h3 class="titulo-gracias">Muchas Gracias!</h3>
+            <img class="imagen-gracias" src="img/fotoboda (3).jpeg" alt="">
+        </div>
+    </section>
+
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
